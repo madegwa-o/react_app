@@ -1,0 +1,52 @@
+.NavBar {
+    width: 60px;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavLink {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, width 0.3s;
+    white-space: nowrap;
+}
+
+.NavLink img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid  #646cff;
+    margin: 1px;
+    transition: transform 0.3s;
+}
+
+.NavLink span {
+    margin: 2px;
+    display: none;
+    transition: display 0.3s;
+}
+
+.NavLink:hover img {
+    transform: scale(1.2);
+    border: 1px solid  #646cff;
+}
+
+.NavLink:hover span {
+    display: inline;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid  #646cff;
+    margin: 3px;
+    width: 150px;
+}

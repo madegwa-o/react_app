@@ -1,0 +1,113 @@
+.LetsConnect {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #6b6969;
+}
+
+.LetsConnect hr {
+    height: 1px; /* Horizontal line by default */
+    width: 80%; /* Adjust as needed */
+    border: none;
+    border-top: 1px solid #fff; /* Create horizontal line */
+    margin: 20px 0; /* Space between top and bottom elements */
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left h1, .right h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.left p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.right input, .right textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.right button {
+    margin: 5px;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWithIcon {
+    position: relative;
+    margin: 0%;
+}
+
+.inputWithIcon img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.inputWithIcon input {
+    width: 70%;
+    padding-left: 40px; /* Adjust based on the width of the icon */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.inputWithIcon input:hover {
+    border: 1px solid hsl(276, 96%, 18%);
+}
+
+.textArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textArea textarea {
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #94b90b;
+    font-size: 1rem;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.textArea textarea:hover {
+    border: 1px solid hsl(276, 96%, 18%);
+}
+
+/* Media query for wider screens */
+@media (min-width: 768px) {
+    .LetsConnect {
+        flex-direction: row; /* Change to row for larger screens */
+    }
+    
+    .LetsConnect hr {
+        height: 20vh; /* Vertical line for larger screens */
+        width: 1px; /* Adjust as needed */
+        border-left: 1px solid #fff; /* Create vertical line */
+        border-top: none; /* Remove horizontal line */
+        margin: 0 20px; /* Space between left and right elements */
+    }
+}

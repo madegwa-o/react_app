@@ -1,0 +1,22 @@
+.Stack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Stack hr{
+    width: 80%;
+}
+
+.Stack span{
+    color: green;
+}
+
+.tools{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

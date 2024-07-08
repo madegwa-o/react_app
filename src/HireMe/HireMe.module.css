@@ -1,0 +1,40 @@
+.HireMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.headerButtonGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Default gap, can be adjusted */
+    max-width: 400px;
+    width: 100%;
+}
+
+.HireMe h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.HireMe button {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.HireMe button:hover {
+    border: 1px solid #f7f7fc;
+}
+
+.HireMe p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px; /* Space between the header-button group and the paragraph */
+}

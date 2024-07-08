@@ -1,0 +1,31 @@
+.Card{
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative; /* Ensure the h1 can be absolutely positioned relative to the card */
+}
+
+.card img {
+    width: 50%;
+    height: 50%;
+   
+   
+}
+
+.Card h2 {
+    position: absolute; /* Position h1 absolutely within the card */
+    top: 80%; /* Position h1 50% from the top */
+    left: 50%; /* Position h1 50% from the left */
+    transform: translate(-50%, -50%); /* Offset the position by 50% of the h1's width and height to center it */
+    z-index: 2; /* Ensure the h1 appears above the image */
+    color: white; /* Change text color as needed */
+    text-align: center; /* Center text alignment */
+    /* Optional: add a semi-transparent background for better readability */
+    padding: 10px; /* Optional: add padding for better appearance */
+    border-radius: 8px; /* Optional: add border radius to the background */
+}
